@@ -7,7 +7,8 @@ class AppCardDirective {
       scope: {
         appName: '@',
         timeSpent: '@',
-        mentalState: '@'
+        mentalState: '@',
+        eegData: '='
       },
       templateUrl: 'app/components/appCard/appCard.html',
       link: linkFunc,

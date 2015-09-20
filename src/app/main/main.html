@@ -3,7 +3,7 @@
     <message ng-repeat="message in main.messages" message="{{message.text}}"></message>
   </div>
   <div class="app-cards" flex="66">
-    <app-card ng-repeat="app in main.apps" app-name="{{app.app}}" time-spent="{{app.timeSpent}}" mental-state="{{app.mentalState}}" ></app-card>
+    <app-card ng-repeat="app in main.apps" app-name="{{app.app}}" time-spent="{{app.timeSpent}}" mental-state="{{app.mentalState}}" eeg-data="app.graph.data"></app-card>
   </div>
   <!-- <md-content>
     Hello

@@ -3,11 +3,10 @@
     <div flex="75">
       <h1 class="AppCard-Text">{{ appName }}</h1>
       <div class="AppCard-Bottom" layout="row">
-        <h3 flex="50">Time Spent: {{ timeSpent }}</h3>
-        <h3 flex="50">Mental State: {{ mentalState }}</h3>
+        <h3 flex="50">Time Spent: <strong>{{ timeSpent }}</strong></h3>
+        <h3 flex="50">Mental State: <strong>{{ mentalState }}</strong></h3>
       </div>
     </div>
-    <div>
-    </div>
+    <histogram flex="25" data="eegData" />
   </md-content>
 </md-card>

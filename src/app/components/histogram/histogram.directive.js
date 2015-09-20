@@ -5,7 +5,7 @@ class HistogramDirective {
     let directive = {
       restrict: 'E',
       scope: {
-        charData: '='
+        data: '='
       },
       templateUrl: 'app/components/histogram/histogram.html',
       link: linkFunc,

@@ -7,8 +7,13 @@
 
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
 
+$blue: #89AAE6;
+$red: #B97375;
+$darkGrey: #2D2D34;
+$lightGrey: #373F47;
+
 html {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Avenir Next', serif;
 }
 
 body {
@@ -22,8 +27,8 @@ body {
   padding: 0.2em 0;
 }
 
-.main-container {
-  height: 100vh;
+html, body, .main-container {
+  height: 100%;
 }
 
 .messages {
