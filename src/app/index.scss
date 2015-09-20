@@ -31,6 +31,25 @@ html, body, .main-container {
   height: 100%;
 }
 
+.component-container {
+  height: 92vh;
+}
+
+navbar {
+
+  md-toolbar {
+    height: 8vh;
+    min-height: 0;
+    background-color: #e98686;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+}
+
+md-card {
+  margin: 16px;
+}
+
 .messages {
   padding: 2rem;
 

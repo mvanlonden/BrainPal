@@ -11,10 +11,8 @@ const METRICS = [ 'alpha_absolute',
                   'theta_absolute'];
 const CLOUDBRAIN = 'http://demo.apiserver.cloudbrain.rocks/api/v1.0/users/' + USER_ID;
 
-class TagService
-{
-  constructor($log, $http)
-  {
+class TagService {
+  constructor($log, $http) {
     'ngInject';
     HTTP.set(this, $http);
   }

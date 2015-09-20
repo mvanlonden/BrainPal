@@ -10,7 +10,7 @@ class MainController {
         text: 'Looks like you’ve been very focused while at Kahn Academy. Keep it up!'
       },
       {
-        text: ''
+        text: 'Ooooohmmmm. Looks like you’re feeling pretty zen when visiting instagram.com. Could be a good application for decompression.'
       }
     ];
 

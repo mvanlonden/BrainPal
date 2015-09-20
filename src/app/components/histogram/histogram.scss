@@ -1,5 +1,5 @@
 histogram {
-  height: 119px;
+  height: 75px;
 }
 
 .chart {
@@ -11,7 +11,7 @@ histogram {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  font-size: .7rem;
+  font-size: .5rem;
 
    &:nth-child(1) {
      .bar {
@@ -35,7 +35,7 @@ histogram {
     }
    &:nth-child(5) {
      .bar {
-        background-color: hsl(0, 69%, 72%);
+        background-color: hsl(-20, 69%, 72%);
       }
     }
 }
