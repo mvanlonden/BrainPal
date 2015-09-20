@@ -1,16 +1,13 @@
-class AppCardDirective {
+class HistogramDirective {
   constructor () {
     'ngInject';
 
     let directive = {
       restrict: 'E',
       scope: {
-        appName: '@',
-        timeSpent: '@',
-        mentalState: '@',
-        eegData: '='
+        data: '='
       },
-      templateUrl: 'app/components/appCard/appCard.html',
+      templateUrl: 'app/components/histogram/histogram.html',
       link: linkFunc,
     };
 
@@ -22,4 +19,4 @@ class AppCardDirective {
   }
 }
 
-export default AppCardDirective;
+export default HistogramDirective;

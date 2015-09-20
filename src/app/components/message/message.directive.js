@@ -14,6 +14,7 @@ class MessageDirective {
     return directive;
 
     function linkFunc(scope, el, attr, vm) {
+      console.log(scope.message);
     }
 
   }
