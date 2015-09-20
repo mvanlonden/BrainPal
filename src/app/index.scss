@@ -11,10 +11,6 @@ html {
   font-family: 'Roboto Slab', serif;
 }
 
-[layout=row] {
-  flex-direction: row;
-}
-
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -22,44 +18,18 @@ html {
   padding: 0.2em 0;
 }
 
-.thumbnail {
-  height: 200px;
-
-  img.pull-right {
-    width: 50px;
-  }
+.main-container {
+  height: 100vh;
 }
 
-md-toolbar.md-default-theme {
-  background-color: black;
+.messages {
+
 }
 
-section.jumbotron {
-  margin-bottom: 30px;
-  padding: 1px 30px;
-  background-color: #5aadbb;
-  text-align: center;
-
-  color: white;
-
-  h1 {
-    font-size: 3em;
-  }
+.app-cards {
+  background-color: #D8D8D8;
 }
 
-.techs {
-  display: flex;
-  flex-flow: row wrap;
-
-  md-card {
-    width: 30%;
-
-    img.pull-right {
-      float: right;
-      width: 50px;
-    }
-  }
-}
 
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
