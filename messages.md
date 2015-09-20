@@ -41,3 +41,6 @@ Hey seems like you get pretty engaged when using [x] but you don't use it often.
 ## Very relaxed
 
 Hmmm. Did you fall asleep while doing [x]?
+## Relaxed
+
+Relaxing is good for your mind, body and soul. [x] keeps you in a meditative state.

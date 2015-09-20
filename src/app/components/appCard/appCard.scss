@@ -6,7 +6,7 @@
   }
 
   h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 300;
     margin: 0;
 
@@ -15,7 +15,8 @@
     }
   }
 
-  &-Text {
-    // font-size: 40px;
+  md-content {
+    padding-bottom: 3px;
+    padding-right: 8px;
   }
 }
