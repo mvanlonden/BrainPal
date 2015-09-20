@@ -51,7 +51,7 @@ class TagService {
   getTagAggregates(tagId){
     let filter_params = {
       device_type: DEVICE_TYPE,
-      metric: METRICS
+      'metrics': METRICS
     };
     let deferred = this.$q.defer();
     HTTP.get(this).get(CLOUDBRAIN + `/tags/${tagId}/aggregates`, { params: filter_params })

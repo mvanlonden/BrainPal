@@ -1,7 +1,8 @@
 <navbar></navbar>
 <md-content class="component-container" layout="row" layout-fill>
-  <div class="messages" flex="33">
+  <div class="messages" flex="33" scroll-glue>
     <message ng-repeat="message in main.messages" message="{{message.text}}"></message>
+    <message ng-show="main.speaking" message="&bull;&bull;&bull;"></message>
   </div>
   <div class="app-cards" flex="66">
     <app-card ng-repeat="app in main.apps" app-name="{{app.app}}" time-spent="{{app.timeSpent}}" mental-state="{{app.mentalState}}" eeg-data="app.graph.data"></app-card>
