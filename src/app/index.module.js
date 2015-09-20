@@ -5,22 +5,16 @@ import routerConfig from './index.route';
 
 import runBlock from './index.run';
 import MainController from './main/main.controller';
-import GithubContributorService from '../app/components/githubContributor/githubContributor.service';
-import WebDevTecService from '../app/components/webDevTec/webDevTec.service';
-import NavbarDirective from '../app/components/navbar/navbar.directive';
-import MalarkeyDirective from '../app/components/malarkey/malarkey.directive';
+import AppCardDirective from '../app/components/appCard/appCard.directive';
+import MessageDirective from '../app/components/message/message.directive';
 
 angular.module('eegappdata', ['ngCookies', 'ngTouch', 'ngSanitize', 'ui.router', 'ngMaterial'])
-  .constant('malarkey', malarkey)
-  .constant('toastr', toastr)
-  .constant('moment', moment)
   .config(config)
+  .constant('toastr', toastr)
 
   .config(routerConfig)
 
   .run(runBlock)
-  .service('githubContributor', GithubContributorService)
-  .service('webDevTec', WebDevTecService)
   .controller('MainController', MainController)
-  .directive('acmeNavbar', () => new NavbarDirective())
-  .directive('acmeMalarkey', () => new MalarkeyDirective(malarkey));
+  .directive('appCard', () => new AppCardDirective())
+  .directive('message', () => new MessageDirective());
