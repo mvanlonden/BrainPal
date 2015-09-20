@@ -52,12 +52,14 @@ md-card {
 
 .messages {
   padding: 2rem;
+  overflow: scroll;
 
 }
 
 .app-cards {
   padding: 3rem;
-    background-color: #F5F5F5;
+  background-color: #D8D8D8;
+  overflow: scroll;
 }
 
 
