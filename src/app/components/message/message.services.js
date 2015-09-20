@@ -50,8 +50,12 @@ class MessageService {
         "general": [
           "Ooooohmmmm. Looks like you’re feeling pretty zen when visiting [x]. Could be a good application for decompression."
         ],
-        "high_time": [],
-        "low_time": []
+        "high_time": [
+          "I like your style. Keeping calm using [x]."
+        ],
+        "low_time": [
+          "Thinking you might be benefit from some more calm time using [x]."
+        ]
       },
       "tense": {
         "general": [
@@ -68,9 +72,11 @@ class MessageService {
       "focused": {
         "general": [
           "Woohoo you're in the zone on [x].",
-          "Looks like you’ve been very focused while at [x]. Keep it up!"
+          "Looks like you’ve been very focused while using [x]. Keep it up!"
         ],
-        "high_time": [],
+        "high_time": [
+          "Juices have been flowing using [x]. Nice!"
+        ],
         "low_time": [
           "Hey seems like you get pretty engaged when using [x] but you don't use it often. Have you thought about using more often?",
           "Get in the zooone! Don't forget about [x]."
@@ -80,7 +86,9 @@ class MessageService {
         "general": [
           "Using [x] allows you to take a load off."
         ],
-        "high_time": [],
+        "high_time": [
+          "You've been spending a lot of time relaxing on [x]. Are you ready for a big dose of focused time?"
+        ],
         "low_time": [
           "If you're feeling tense use [x]."
         ]
@@ -89,7 +97,9 @@ class MessageService {
         "general": [
           "Hmmm. Did you fall asleep while using [x]?"
         ],
-        "high_time": [],
+        "high_time": [
+          "You're either super relaxed or falling asleep at the wheel when you're using [x]."
+        ],
         "low_time": [
           "Trouble sleeping? [x] is here to help you.",
           "Feel the power of deep relaxation with by using [x]."
