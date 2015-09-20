@@ -11,6 +11,10 @@ html {
   font-family: 'Roboto Slab', serif;
 }
 
+body {
+  font-size: 20px;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -23,10 +27,12 @@ html {
 }
 
 .messages {
+  padding: 2rem;
 
 }
 
 .app-cards {
+  padding: 3rem;
   background-color: #D8D8D8;
 }
 

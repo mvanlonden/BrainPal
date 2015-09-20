@@ -1,10 +1,9 @@
 <div class="main-container" layout="row" layout-fill>
-
   <div class="messages" flex="33">
-    <message></message>
+    <message ng-repeat="message in main.messages" message="{{message.text}}"></message>
   </div>
   <div class="app-cards" flex="66">
-    <app-card></app-card>
+    <app-card ng-repeat="app in main.apps" app-name="{{app.app}}" time-spent="{{app.timeSpent}}" mental-state="{{app.mentalState}}" ></app-card>
   </div>
   <!-- <md-content>
     Hello

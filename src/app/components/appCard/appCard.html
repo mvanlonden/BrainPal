@@ -1,5 +1,13 @@
-<md-card>
-  <md-content class="md-padding">
-    <p class="AppCard-Text">Text</p>
+<md-card class="AppCard">
+  <md-content class="md-padding" layout="row">
+    <div flex="75">
+      <h1 class="AppCard-Text">{{ appName }}</h1>
+      <div class="AppCard-Bottom" layout="row">
+        <h3 flex="50">Time Spent: {{ timeSpent }}</h3>
+        <h3 flex="50">Mental State: {{ mentalState }}</h3>
+      </div>
+    </div>
+    <div>
+    </div>
   </md-content>
 </md-card>
