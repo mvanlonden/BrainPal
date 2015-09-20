@@ -38,4 +38,6 @@ Woohoo you're in the zone on [x].
 Hey seems like you get pretty engaged when using [x] but you don't use it often. Have you thought about using more often?
 
 
-##
+## Relaxed
+
+Relaxing is good for your mind, body and soul. [x] keeps you in a meditative state.
