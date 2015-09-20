@@ -4,12 +4,15 @@ class MainController {
 
     this.messages = [
       {
-        text: 'You are getting a little agitated when on facebook.com. You might want to consider spending less time there.',
+        text: 'You are getting a little agitated when on facebook.com. You might want to consider spending less time there.'
       },
       {
         text: 'Looks like you’ve been very focused while at Kahn Academy. Keep it up!'
+      },
+      {
+        text: ''
       }
-    ]
+    ];
 
     this.apps = [
       {
@@ -19,23 +22,23 @@ class MainController {
         graph: {
           data: [
             {
-              name: 'alpha',
+              name: 'α',
               value: 20
             },
             {
-              name: 'beta',
+              name: 'β',
               value: 40
             },
             {
-              name: 'delta',
+              name: 'γ',
               value: 40
             },
             {
-              name: 'theta',
+              name: 'δ',
               value: 40
             },
             {
-              name: 'gamma',
+              name: 'θ',
               value: 40
             }
           ]
@@ -48,29 +51,29 @@ class MainController {
         graph: {
           data: [
             {
-              name: 'alpha',
+              name: 'α',
               value: 10
             },
             {
-              name: 'beta',
+              name: 'β',
               value: 60
             },
             {
-              name: 'delta',
+              name: 'γ',
               value: 10
             },
             {
-              name: 'theta',
+              name: 'δ',
               value: 70
             },
             {
-              name: 'gamma',
+              name: 'θ',
               value: 40
             }
           ]
         }
       }
-    ]
+    ];
   }
 
 }

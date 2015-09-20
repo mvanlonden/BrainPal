@@ -1,5 +1,5 @@
 <div class="chart" layout="row" layout-align="end end">
-  <div class="bar-container" flex layout="row" layout-align="end end" ng-repeat="bar in data">
-    <div class="bar" ng-style="{'height': '{{bar.value}}%'}"></div>
+  <div class="bar-container" flex layout="column" layout-align="end center" ng-repeat="bar in data">
+    <div class="bar" ng-style="{'height': '{{bar.value}}%'}"></div>{{ bar.name }}
   </div>
 </div>
