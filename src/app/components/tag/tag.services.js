@@ -27,7 +27,7 @@ class TagService {
         deferred.resolve(result.data);
       })
       .catch((error) => {
-        mock_result = [{"end": 1442770168581, "tag_id": "c1f6e1f2-c964-48c0-8cdd-fafe8336190b", "start": 1442770168571, "tag_name": "Facebook", "user_id": "brainpal_user", "metadata": {}}, {"end": 1442770168581, "tag_id": "c1f6e1f2-c964-48c0-8cdd-fafe8336190b", "start": 1442770168571, "tag_name": "Netflix", "user_id": "brainpal_user", "metadata": {}}, {"end": 1442770168581, "tag_id": "c1f6e1f2-c964-48c0-8cdd-fafe8336190b", "start": 1442770168571, "tag_name": "TechCrunch", "user_id": "brainpal_user", "metadata": {}}];
+        let mock_result = [{"end": 1442770168581, "tag_id": "c1f6e1f2-c964-48c0-8cdd-fafe8336190b", "start": 1442770168571, "tag_name": "Facebook", "user_id": "brainpal_user", "metadata": {}}, {"end": 1442770168581, "tag_id": "c1f6e1f2-c964-48c0-8cdd-fafe8336190b", "start": 1442770168571, "tag_name": "Netflix", "user_id": "brainpal_user", "metadata": {}}, {"end": 1442770168581, "tag_id": "c1f6e1f2-c964-48c0-8cdd-fafe8336190b", "start": 1442770168571, "tag_name": "TechCrunch", "user_id": "brainpal_user", "metadata": {}}];
         deferred.resolve(mock_result);
         // $log.error('XHR Failed for getTags.\n' + angular.toJson(error.data, true));
       });
