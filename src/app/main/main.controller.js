@@ -4,32 +4,34 @@ class MainController {
 
     this.messages = MessageService.getMessages();
     this.speaking = true;
-    for (let i = 0; i < 2; i++) {
-      console.log(i);
-      $timeout(() => {
-        console.log('timeout');
-        MessageService.addMessage();
-        this.messages = MessageService.getMessages();
-      }, i * 1000);
-    }
 
-    $interval(() => {
-      this.speaking = !this.speaking;
-      if (this.speaking) {
-        console.log(this.speaking);
-        for (let i = 0; i < 2; i++) {
-          console.log(i);
-          $timeout(() => {
-            console.log('timeout');
-            MessageService.addMessage();
-            this.messages = MessageService.getMessages();
-          }, i * 1000);
-        }
+    let loops = 0;
+
+    AppCardService.populateAppCards().then((apps) => {
+      this.apps = apps
+      for (let i = 0; i < 1; i++) {
+        $timeout(() => {
+          MessageService.addMessage();
+          this.messages = MessageService.getMessages();
+        }, i * 1000);
       }
 
-    }, 10000);
+      $interval(() => {
+        while(loops < 4) {
+          this.speaking = !this.speaking;
+          if (this.speaking) {
+            for (let i = 0; i < 1; i++) {
+              $timeout(() => {
+                MessageService.addMessage();
+                this.messages = MessageService.getMessages();
+              }, i * 1000);
+            }
+          }
+          loops++;
+        }
+      }, 5000);
 
-    AppCardService.populateAppCards().then((apps) => this.apps = apps);
+    });
 
   }
 
